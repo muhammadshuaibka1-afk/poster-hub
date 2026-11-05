@@ -1,0 +1,6 @@
+{
+  "name": "Poster Hub",
+  "description": "Curated official high-resolution poster gallery and collection manager with live search, custom uploads, lightbox inspection, and full PWA offline support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

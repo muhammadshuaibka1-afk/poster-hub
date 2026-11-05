@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171322"/>
+      <stop offset="100%" stop-color="#0d0b14"/>
+    </linearGradient>
+    <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="96" fill="none" stroke="#2e2745" stroke-width="6"/>
+
+  <!-- Back Poster (Angled) -->
+  <g transform="rotate(-7 256 256)">
+    <rect x="156" y="100" width="220" height="300" rx="16" fill="#1f1a2e" stroke="#4c3d70" stroke-width="4" opacity="0.65"/>
+    <line x1="180" y1="150" x2="330" y2="150" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Front Poster (Main Hero) -->
+  <g filter="url(#glow)">
+    <rect x="136" y="106" width="240" height="310" rx="20" fill="#171322" stroke="url(#pGrad)" stroke-width="6"/>
+  </g>
+
+  <!-- Poster Art Preview: Glowing Sun / Nebula -->
+  <circle cx="256" cy="210" r="46" fill="url(#accentGrad)"/>
+  
+  <!-- Geometric poster mountains / horizon -->
+  <path d="M148 350 L216 270 L268 320 L308 280 L364 350 Z" fill="#2e2745"/>
+  <path d="M190 350 L256 276 L330 350 Z" fill="#8b5cf6" opacity="0.5"/>
+
+  <!-- Frame Title Bar -->
+  <rect x="166" y="376" width="110" height="12" rx="6" fill="#c084fc"/>
+  <rect x="290" y="376" width="56" height="12" rx="6" fill="#8b5cf6" opacity="0.7"/>
+
+  <!-- Star sparkle -->
+  <path d="M334 140 Q334 160 354 160 Q334 160 334 180 Q334 160 314 160 Q334 160 334 140 Z" fill="#e9d5ff"/>
+</svg>
